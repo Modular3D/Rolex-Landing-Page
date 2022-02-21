@@ -1,0 +1,464 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.PanelBottom {
+  position: absolute;
+  right: 6px;
+  z-index: 2;
+  width: 40%;
+  height: 98%;
+  padding: 1%;
+  border-radius: 33px;
+  /* border: solid 0.1px lightgray; */
+}
+
+.Scene {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.but {
+  border: solid 0px !important;
+  position: absolute;
+  width: 60%;
+  height: 80%;
+  left: 20%;
+  top: 10%;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.butimg {
+  width: 60%;
+  height: 80%;
+}
+
+*:focus {
+  outline: 0;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #cc0000;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.my-canvas {
+  height: 100%;
+  width: 100%;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.html,
+.body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#renderCanvas {
+  width: 60%;
+  height: 100%;
+  display: block;
+  font-size: 0;
+}
+.container {
+  max-width: 1821px !important;
+}
+.Model-Card {
+  height: 60vh;
+  background-color: transparent !important;
+  border: solid 1px !important;
+  border-radius: 25px !important;
+}
+/*
+  .bg-primary {
+  /* border-radius: 46px; */
+/* position: absolute; */
+/* width: 90%; */
+/* left: 22px; */
+/* top: -1px; */
+
+.bg-dark {
+  background-color: #343a40 !important;
+  border-radius: 46px;
+  position: absolute;
+  width: 90%;
+  left: 22px;
+  top: -1px;
+}
+.Models-Card {
+  max-width: 9rem;
+  margin: 3%;
+}
+.Models-div {
+  margin: 5%;
+  max-height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+.Card-title {
+  font-size: 0.6rem !important;
+}
+.FingerPanel {
+  position: absolute;
+  background-color: transparent;
+  left: 0%;
+  right: 0%;
+  z-index: 999999;
+  height: 20vh;
+  bottom: 15vh;
+}
+
+.Finger {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100px;
+  height: 100px;
+  animation: fingermoving 9s 4;
+  top: -40%;
+  left: -20%;
+}
+
+.icons {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+}
+.icon-btn2 {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  text-align: center;
+  background: none;
+  margin: none;
+  border: none;
+  opacity: 0.55;
+  top: 70%;
+  right: 44%;
+  outline: none;
+  padding-top: 2%;
+}
+.icon-btn3 {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  text-align: center;
+  background: none;
+  margin: none;
+  border: none;
+  opacity: 0.55;
+  top: 84%;
+  right: 44%;
+  outline: none;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+  height: 8vw !important;
+  width: 8vw !important;
+}
+.img-fluid {
+  max-width: 100%;
+  height: 8vw !important;
+  width: 8vw !important;
+}
+#ButtonColor {
+  height: 8vw !important;
+  width: 8vw !important;
+}
+#ImageColor {
+  height: 4.5vw !important;
+  width: 4.5vw !important;
+}
+#ImageTexture {
+  height: 4.5vw !important;
+  width: 4.5vw !important;
+}
+#ImagePresset {
+  height: 4.5vw !important;
+  width: 4.5vw !important;
+}
+
+.tab-content {
+  height: 100px;
+}
+.TabsBottom {
+  width: 100%;
+}
+.nav-tabs .nav-link {
+  margin-bottom: -1px;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  margin-right: 1.8vw !important;
+}
+#noanim-tab-example-tab-1 {
+  color: goldenrod !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* width: 16%; */
+}
+#noanim-tab-example-tab-2 {
+  color: goldenrod !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* width: 16%; */
+}
+#noanim-tab-example-tab-3 {
+  color: goldenrod !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* width: 16%; */
+}
+.TabDiv {
+  width: 4vw;
+}
+.titlesoficons {
+  margin-top: 3%;
+  margin-bottom: 10%;
+  font-size: 1.5vw;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  text-align: center;
+  color: black;
+}
+.rotate {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  pointer-events: none;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+@keyframes fingermoving {
+  0% {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  25% {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  50% {
+    padding-left: 0px;
+    padding-right: 300px;
+  }
+  75% {
+    padding-left: 100px;
+    padding-right: 0px;
+  }
+  100% {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 470px) {
+  .but {
+    border: solid 0px !important;
+    position: absolute;
+    padding: 0px;
+    width: 60%;
+    height: 80%;
+    top: 10%;
+    right: 20%;
+  }
+  .butimg {
+    width: 60%;
+    height: 80%;
+  }
+  .icon-btn2 {
+    top: 42%;
+    right: 12%;
+  }
+  .icon-btn3 {
+    top: 52%;
+    right: 12%;
+  }
+
+  .rounded-circle {
+    border-radius: 50% !important;
+    height: 8vw !important;
+    width: 8vw !important;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: 8vw !important;
+    width: 8vw !important;
+  }
+  #ButtonColor {
+    height: 20vw !important;
+    width: 20vw !important;
+  }
+  #ImageColor {
+    height: 12vw !important;
+    width: 12vw !important;
+  }
+  #ImageTexture {
+    height: 12vw !important;
+    width: 12vw !important;
+  }
+  #ImagePresset {
+    height: 12vw !important;
+    width: 12vw !important;
+  }
+
+  #noanim-tab-example-tab-1 {
+    color: goldenrod !important;
+    width: 33%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  #noanim-tab-example-tab-2 {
+    color: goldenrod !important;
+    width: 33%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  #noanim-tab-example-tab-3 {
+    color: goldenrod !important;
+    width: 33%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .titlesoficons {
+    margin-top: 3%;
+    margin-bottom: 10%;
+    font-size: 5vw;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    color: black;
+  }
+  #renderCanvas {
+    width: 100%;
+    height: 60%;
+    display: block;
+    font-size: 0;
+    position: absolute;
+    /* bottom: 0%; */
+  }
+  .PanelBottom {
+    position: absolute;
+    bottom: 1% !important;
+    left: 1%;
+    z-index: 2;
+    width: 99%;
+    height: 37%;
+    padding: 1%;
+    border-radius: 33px;
+    /* border: solid 0.1px lightgray; */
+  }
+
+  .Titlecard {
+    font-size: 70%;
+  }
+  .TabsBottom {
+    margin-left: 0;
+  }
+  .nav-tabs {
+    margin-left: 0% !important;
+    border-bottom: 1px solid #dee2e6 !important;
+  }
+  .nav-tabs .nav-link {
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    margin-right: 0px !important;
+  }
+  .nav {
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .row {
+    display: flex;
+    flex-wrap: nowrap !important;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .btn {
+    padding: 0 !important;
+  }
+
+  .Finger {
+    position: relative;
+    background-color: transparent;
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100px;
+    height: 100px;
+    animation: fingermoving 9s 4;
+    top: -110%;
+    left: 0%;
+  }
+  .TabDiv {
+    width: 12vw;
+    margin: auto;
+  }
+}
